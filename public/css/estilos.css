@@ -1,0 +1,377 @@
+/* estilos.css - Archivo CSS común para todas las páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* ----- CABECERA ----- */
+.cabecera {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.botonVolver {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    float: left;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* ----- NAVEGACIÓN ----- */
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.botonNav {
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #555;
+    border: none;
+    background: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.botonNav.activo {
+    color: #0066cc;
+    border-bottom: 3px solid #0066cc;
+}
+
+.icono {
+    font-size: 20px;
+}
+
+/* ----- CONTENIDO GENERAL ----- */
+.contenido {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tituloSeccion {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.instruccion {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ----- PÁGINA DE INFORMACIÓN ----- */
+.tarjetasEstado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex: 1;
+    min-width: 200px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin: 5px;
+}
+
+.tituloTarjeta {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.disponibles {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.ocupados {
+    font-size: 32px;
+    font-weight: bold;
+    color: #F44336;
+}
+
+.horaActualizacion {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.seccionInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cajaInfo {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tituloInfo {
+    color: #0066cc;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.itemInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.iconoInfo {
+    width: 20px;
+    height: 20px;
+    background-color: #0066cc;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.tablaTarifas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablaTarifas td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.iconoCheck {
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+.botonAccion {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ----- PÁGINA DE ESPACIOS ----- */
+.contenedorNiveles {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.botonesNivel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.botonNivel {
+    padding: 8px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.botonNivel.activo {
+    background-color: #0066cc;
+    color: white;
+}
+
+.mapaEspacios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filaEspacios {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.espacio {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.espacio.disponible {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.espacio.ocupado {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+    cursor: not-allowed;
+}
+
+.espacio.seleccionado {
+    background-color: #bbdefb;
+    color: #0066cc;
+    border: 2px solid #0066cc;
+    transform: scale(1.05);
+}
+
+.botonReservar {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botonReservar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.botonReservar:not(:disabled):hover {
+    background-color: #004d99;
+}
+
+/* ----- PÁGINA DE RESERVAS ----- */
+.formularioReserva {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupoFormulario {
+    margin-bottom: 20px;
+}
+
+.grupoFormulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.grupoFormulario input,
+.grupoFormulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.grupoFormulario input:focus,
+.grupoFormulario select:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+    .tarjetasEstado {
+        flex-wrap: wrap;
+    }
+    
+    .tarjeta {
+        min-width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    
+    .cajaInfo {
+        min-width: 100%;
+    }
+
+    .filaEspacios {
+        gap: 5px;
+    }
+    
+    .espacio {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .botonNivel {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+    
+    .espacio {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+}

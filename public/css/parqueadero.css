@@ -1,0 +1,197 @@
+/* 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ */
+/* Reset básico para márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilo para el header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  /* background-color: #333; */
+  color: white;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+header a:hover {
+  color: #f9a825;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropbtn {
+  /* background-color: #444; */
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  /* color: #333; */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos del main */
+main {
+  padding: 50px 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Diseño de la cuadrícula de parqueaderos */
+.grid-parqueaderos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 10px;
+ 
+}
+
+.parqueadero {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0); /* Sombra ligera */
+  height: 350px;
+}
+
+.parqueadero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.parqueadero p {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/* Hover effect */
+.parqueadero:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.btn-logout {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f44336; /* Color rojo */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px; /* Espacio superior */
+}
+
+.btn-logout:hover {
+  background-color: #c62828; /* Color rojo más oscuro al pasar el ratón */
+}
+
+.ver-mas1 {
+  background-color: #33595e;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-left: 300px;
+  margin-top: 30px;
+  text-decoration: none;
+
+}
+
+.ver-mas2 {
+  background-color: #33595e;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.ver-mas3 {
+  background-color: #33595e;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-left: 300px;
+  margin-top: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30px;
+}
+
+@media (max-width: 768px) {
+  .ver-mas3{
+    margin-top: -1px;
+  }
+   
+  }

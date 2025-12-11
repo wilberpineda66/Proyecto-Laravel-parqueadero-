@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+/* Estilos del encabezado */
+
+.boton-regresar {
+    margin-right: 20px;
+}
+
+.volver {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.cabecera {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botonVolver {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    float: left;
+    text-decoration: none; /* Para quitar el subrayado del enlace */
+    
+}
+
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.botonNav {
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #555;
+    border: none;
+    background: none;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  
+    text-decoration: none;
+}
+
+.botonNav.activo {
+    color: #0066cc;
+    border-bottom: 3px solid #0066cc;
+    text-decoration: none;
+}
+
+.icono {
+    font-size: 20px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+.contenedor-reserva {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenedor-reserva h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Indicadores de pasos */
+.contenedor-pasos {
+    margin: 30px 0;
+}
+
+.pasos {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.pasos::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    right: 30%;
+    height: 2px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.paso {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 2px solid #ddd;
+}
+
+.paso span {
+    font-weight: bold;
+    color: #777;
+}
+
+.paso.activo {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.paso.activo span {
+    color: white;
+}
+
+.paso.completado {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.paso.completado span {
+    color: white;
+}
+
+/* Estilos del formulario */
+.contenedor-formulario {
+    padding: 20px 0;
+}
+
+.paso-formulario {
+    display: none;
+}
+
+.paso-formulario h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.grupo-formulario input,
+.grupo-formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Estilos de botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.boton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-atras {
+    background-color: #f1f1f1;
+    color: #555;
+}
+
+.boton-siguiente,
+.boton-confirmar {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Resumen de la reserva */
+.resumen-reserva {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.resumen-reserva h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.fila-resumen {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.etiqueta-resumen {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Hacer que el paso 2 esté activo inicialmente */
+#paso2 {
+    display: block;
+}

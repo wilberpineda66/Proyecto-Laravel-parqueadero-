@@ -1,0 +1,249 @@
+.tarifa {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  h1 {
+    color: #333;
+  }
+ 
+  p {
+    color: #666;
+  }
+ 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+ 
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+ 
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+ 
+  th {
+    background-color: #f4f4f4;
+  }
+ 
+  em {
+    font-size: 0.9em;
+    color: #999;
+  }
+
+  /* =============================================FOOTER====================== */
+  .footer {
+    background-color: #4fc3f7; /* Color verde claro */
+    color: #000;
+    padding: 30px 0;
+    margin-top: 40px; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+
+
+.section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+   
+}
+
+
+.section h3 {
+    margin-top: 0;
+    font-size: 1em;
+  
+   
+  
+}
+
+.section p, .section a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000000;
+
+     
+}
+
+.app-links img {
+    height: 30px;
+    margin-right: 10px;
+    
+}
+
+.social img {
+    height: 30px;
+    margin-left: 10px;
+    
+   
+}
+
+.copyright {
+  text-align: left;
+  margin-top: 1px; /* Reduce el margen superior para subir la línea */
+  font-size: 0.9em;
+  border-top: 1px solid grey; /* Aumenta el grosor de la línea */
+  width: 100%; /* Asegura que la línea ocupe todo el ancho */
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .section {
+        flex: 1 1 auto;
+    }
+}
+
+/* Ajustes de hover para enlaces */
+.section a:hover, .app-links a:hover, .social a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre columnas */
+  
+}
+
+.contact {
+  padding-right: 40px; /* Reducido para acercar más el texto a la línea */
+  border-right: 1px solid grey; /* Línea vertical */
+  color: white;
+  
+}
+
+
+.ubicacion {
+  padding-right: 40px; /* Igual que en .contact */
+  border-right: 1px solid grey;
+  padding-left: 75px;
+  color: white;
+  font-size: 16px;
+}
+.legal {
+  color: white;
+  font-size: 16px;
+}
+
+h3{
+  padding-right: 90px;
+  font-size: 16px;
+}
+
+
+.contact p, 
+.contact a,
+.ubicacion p, 
+.ubicacion a,
+.legal p,
+.legal a {
+  font-size: 12px; /* Reduce el tamaño del texto */
+  margin: 4px 0; /* Ajusta los márgenes para reducir el espacio */
+  padding: 3px 4px; /* Ajusta el espaciado interno */
+  padding-left: 10px;
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  color: black;
+}
+
+.contact h3{
+  padding-right: 160px;
+}
+.legal h3{
+  padding-right: 232px;
+}
+
+.legal a {
+  text-decoration: none !important;
+  color: black;
+  
+}
+
+
+.contact p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px; 
+}
+
+
+/* ============================letras que estan adentro de contcato =========== */
+.contact p {
+  display: flex;
+  /* Alinea el icono, el texto y el número en línea */
+  align-items: center;
+  /* Asegura que estén centrados verticalmente */
+  justify-content: space-between;
+  /* Separa el texto del número */
+  width: 110%;
+  /* Asegura que ocupe todo el ancho */
+}
+
+.contact span {
+  flex: 1;
+  /* Hace que el texto ocupe el espacio disponible */
+}
+
+.contact p a,
+.contact p span+span {
+  margin-left: 10px;
+  /* Separa el número del texto */
+}
+
+.contact span {
+  font-weight: bold;
+ 
+}
+
+/* ============================letras que estan adentro de contcato =========== */
+
+
+
+.icon {
+  width: 19px; /* Tamaño pequeño */
+  height: 18px;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  vertical-align: middle;
+}
+
+.icon-social {
+  width: 24px; /* Tamaño más grande para redes sociales */
+  height: 14px;
+  margin-right: 1px;
+}
+
+/* _______________________________________________________________________________________________ */
+/* ________________________________________________________________________ */
+

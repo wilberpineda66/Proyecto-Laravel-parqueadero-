@@ -1,0 +1,793 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  overflow-x: hidden;
+  background: url('http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/noisy_net.png') repeat; 
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Estilos del botón hamburguesa */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+ 
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+  
+ 
+}
+
+/* Menú normal en escritorio */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  color: white;
+  margin-right: -10px;
+
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+     
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 10px;
+      background-color: #333;
+      padding: 15px;
+      border-radius: 8px;
+      z-index: 999;
+      
+  }
+
+  .nav-links.show {
+      display: flex;
+      
+  }
+
+  .nav-link-wrapper a {
+      color: white;
+      padding: 10px 0;
+      display: block;
+      text-decoration: none;
+  }
+
+  
+
+  .right-side h1 {
+      font-size: 20px;
+  }
+
+  .logo-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+  }
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 10px 20px;
+  background-color:  #33595e;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.left-side img {
+  max-height: 80px; /* Ajusta según el tamaño de tu logo */
+  width: auto;
+}
+
+.right-side {
+  margin-left: 15px; /* Espacio entre el logo y el texto */
+}
+
+.right-side h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white; /* Color del texto que contrasta con el fondo oscuro */
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.right-side p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #cccccc; /* Color más claro para el texto secundario */
+}
+
+header .left-side a img {
+  width: 100px;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  mix-blend-mode: multiply; /* nueva etiqueta desbloqueada - quietra bordes */
+}
+
+header .right-side {
+  display: flex;
+}
+
+header .right-side .nav-link-wrapper {
+  margin-left: 40px;
+}
+
+header .right-side .nav-link-wrapper a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Viga', sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.container .left-side {
+  text-align: center;
+  margin: 0px;
+}
+
+
+.container .left-side .area {
+  font-size: 6.5em;
+  color: #93ceff;
+  letter-spacing: -2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 0.9s ease-out infinite;
+  text-shadow: 0px 0px 2px #ffffff, 0px 0px 7px #fff;
+  font-family: Impact;
+}
+
+
+.container .left-side h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-family: 'Viga', serif;
+  color: rgb(65, 77, 245);
+}
+
+
+.container .left-side p {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.container .right-side img {
+  max-width: 50%;
+}
+
+.container .right-side .box {
+  display: none;
+}
+
+
+.container .left-side a {
+  display: inline-block;
+  background: rgb(65, 77, 245);
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 25px;
+  color: white;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+
+/* ======================================TU ALIADO================================== */
+.tu-aliado{
+  text-align: left;
+  padding: 20px;
+  margin-left: 40px;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+.subtitulo {
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-left: -5px;
+  color: green;
+  font-family: sans-serif;
+}
+
+
+
+
+.titulo{
+  font-size: 25px; 
+  font-weight: normal; 
+  margin-bottom: -10px;
+  font-weight: 10;
+}
+
+
+.descripcion {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  font-weight: 300px;
+  max-width: 600px;
+  word-wrap: break-word;
+}
+
+/* =================================NUESTA MISION================================ */
+
+:root {
+  --primary-color: #0a5339;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #0d6e4b;
+}
+
+
+
+.comentario {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  font-weight: normal;
+}
+
+.testimonial-section {
+  width: 45%;
+  height: 310px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 25px;
+  font-weight: normal;
+
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 1.4;
+  margin-top: 40px;
+}
+
+.client-info {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.mission-section {
+  width: 50%;
+  padding: 20px;
+  margin-bottom: -180px;
+  font-weight: normal;
+}
+
+.section-title {
+  color: var(--accent-color);
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: -40px;
+  font-weight: normal;
+  margin-top: -140px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-left: 0px;
+  font-weight: normal;
+}
+
+.mission-text {
+  margin-bottom: 29px;
+  font-size: 16px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.quote-circles {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Responsive de nuestro aliado y mision */
+@media (max-width: 768px) {
+  .subtitulo {
+    white-space: normal;
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 490px  ; /* Compensa el margen negativo */
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+    color: #33595e;
+  }
+
+  .titulo{
+    margin-left: -120px;
+    font-size: 30px;
+    margin-top: 20px;
+    
+  }
+  
+  .descripcion{
+    margin-left: -400px;
+    color: #7a7a7a;
+    width: 400px;
+    margin-top: -20px;
+  }
+
+  .testimonial-section {
+    width: 400%;
+    margin-bottom: 20px;
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-left: -40px;
+    margin-top: -10px;
+    
+  }
+
+  .mission-section {
+    width: 100%;
+    margin-left: -50px;
+    margin-top: 110px;    
+  }
+
+  .container {
+    flex-direction: column;
+  } 
+
+.testimonial-section, .mission-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+.stats-container {
+    flex-wrap: wrap;
+  }
+
+.stat-box {
+    width: 50%;
+    margin-bottom: 2px;
+  }
+
+}
+
+
+
+/* =====================================FILOSOFIA============================================= */
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.encabezado {
+  margin-bottom: 30px;
+}
+
+.encabezado h1 {
+  font-size: 42px;
+  color: #1a2639;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.encabezado p {
+  font-size: 18px;
+  color: #5d6678;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rejilla-filosofia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  margin-left: -30px;
+}
+
+.tarjeta-filosofia {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.tarjeta-filosofia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contenedor-icono {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h2{
+  margin-top: -20px;
+  font-weight: 550;
+}
+
+.tarjeta-filosofia h2 {
+  font-size: 24px;
+  margin-bottom: 2px;
+  color: #1a2639;
+}
+
+.tarjeta-filosofia p {
+  color: #5d6678;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.pie-pagina {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+.pie-pagina img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .rejilla-filosofia {
+    grid-template-columns: 1fr;
+  }
+  
+  .encabezado h1 {
+    font-size: 32px;
+  }
+  
+  .encabezado p {
+    font-size: 16px;
+  }
+
+  .tarjeta-filosofia {
+    margin-left: 30px;
+  }
+  .fas fa-clock{
+    margin-left: -30px;
+  }
+}
+
+.contenedor-icono {
+  color: #000000; 
+  font-size: 24px; 
+  width: 60px; 
+  height: 60px; 
+  margin-left: -18px;
+
+}
+  
+  /* =============================================FOOTER====================== */
+  .footer {
+    background-color: #33595e; /* Color verde claro */
+    color: #000;
+    padding: 30px 0;
+    margin-top: 40px; 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.logo img {
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 60px;
+  }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+
+
+.section h3 {
+    margin-top: 0;
+    font-size: 1em;   
+  }
+
+.section p, .section a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: #000000;   
+  }
+
+.app-links img {
+    height: 30px;
+    margin-right: 10px;  
+  }
+
+.social img {
+    height: 30px;
+    margin-left: 10px; 
+  }
+
+.copyright {
+  text-align: left;
+  margin-top: 1px; /* Reduce el margen superior para subir la línea */
+  font-size: 0.9em;
+  border-top: 1px solid grey; /* Aumenta el grosor de la línea */
+  width: 100%; /* Asegura que la línea ocupe todo el ancho */
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .section {
+        flex: 1 1 auto;
+    }
+}
+
+/* Ajustes de hover para enlaces */
+.section a:hover, .app-links a:hover, .social a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre columnas */
+}
+
+.contact {
+  padding-right: 40px; /* Reducido para acercar más el texto a la línea */
+  border-right: 1px solid grey; /* Línea vertical */
+  color: white;
+}
+
+
+.ubicacion {
+  padding-right: 40px; /* Igual que en .contact */
+  border-right: 1px solid grey;
+  padding-left: 75px;
+  color: white;
+  font-size: 16px;
+}
+
+.legal {
+  color: white;
+  font-size: 16px;
+}
+
+h3{
+  padding-right: 90px;
+  font-size: 16px;
+}
+
+.contact p, 
+.contact a,
+.ubicacion p, 
+.ubicacion a,
+.legal p,
+.legal a {
+  font-size: 12px; /* Reduce el tamaño del texto */
+  margin: 4px 0; /* Ajusta los márgenes para reducir el espacio */
+  padding: 3px 4px; /* Ajusta el espaciado interno */
+  padding-left: 10px;
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  color: black;
+}
+
+.contact h3{
+  padding-right: 160px;
+}
+
+.legal h3{
+  padding-right: 232px;
+}
+
+.legal a {
+  text-decoration: none !important;
+  color: black;
+}
+
+
+.contact p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px; 
+}
+
+
+/* ============================letras que estan adentro de contcato =========== */
+.contact p {
+  display: flex;
+  /* Alinea el icono, el texto y el número en línea */
+  align-items: center;
+  /* Asegura que estén centrados verticalmente */
+  justify-content: space-between;
+  /* Separa el texto del número */
+  width: 110%;
+  /* Asegura que ocupe todo el ancho */
+}
+
+.contact span {
+  flex: 1;
+  /* Hace que el texto ocupe el espacio disponible */
+}
+
+.contact p a,
+.contact p span+span {
+  margin-left: 10px;
+  /* Separa el número del texto */
+}
+
+.contact span {
+  font-weight: bold;
+}
+
+/* ============================letras que estan adentro de contcato =========== */
+
+
+
+.icon {
+  width: 19px; /* Tamaño pequeño */
+  height: 18px;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  vertical-align: middle;
+}
+
+.icon-social {
+  width: 24px; /* Tamaño más grande para redes sociales */
+  height: 14px;
+  margin-right: 1px;
+}
+
+/* _______________________________________________________________________________________________ */
+/* ________________________________________________________________________ */
+
+
+.hero {
+  background: url('') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
