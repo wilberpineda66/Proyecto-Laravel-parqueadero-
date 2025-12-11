@@ -142,8 +142,7 @@ Usuario generado por el seeder:
 ------------------------------------------------------------------------
 ## ⭐ Autor
 
-Proyecto desarrollado por **Emanuel (SrAlucart)**\
-Repositorio oficial: https://github.com/SrAlucart/Versiones
+Proyecto desarrollado por **Wilber Pineda**\
 
 ------------------------------------------------------------------------
 
