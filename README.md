@@ -20,7 +20,7 @@ Sistema de gestión de parqueaderos desarrollado en Laravel 10.
 ## 📁 1. Clonar el repositorio
 
 ``` bash
-git clone https://github.com/SrAlucart/Versiones.git
+git clone https://github.com/wilberpineda66/Proyecto-Laravel-parqueadero-.git
 ```
 
 O si ya existe una carpeta vacía:
@@ -28,7 +28,7 @@ O si ya existe una carpeta vacía:
 ``` bash
 git init
 git branch -M main
-git remote add origin https://github.com/SrAlucart/Versiones.git
+git remote add origin https://github.com/wilberpineda66/Proyecto-Laravel-parqueadero-.git
 git pull origin main
 ```
 
